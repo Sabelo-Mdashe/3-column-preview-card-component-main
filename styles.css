@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding-left: 20rem;
+    padding-right: 20rem;
+    background-color: hsl(0, 0%, 95%);
+}
+
+main {
+    display: flex;
+}
+
+main > div {
+    padding: 3em;
+}
+
+.sedans_container {
+    background-color: hsl(31, 77%, 52%);
+    border-bottom-left-radius: 1em;
+    border-top-left-radius: 1em;
+    ;
+}
+
+.suv_container {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury_container {
+    background-color: hsl(179, 100%, 13%);
+    border-bottom-right-radius: 1em;
+    border-top-right-radius: 1em;
+}
+
+h1 {
+    text-transform: uppercase;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    line-height: 1.5em;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+
+button {
+    margin-top: 7em;
+    padding: 1em;
+    border-radius: 5em;
+    border: 0;
+    background-color: hsl(0, 0%, 95%);
+    width: 80%;
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+
+.sedans_container > button {
+    color: hsl(31, 77%, 52%);
+}
+
+.suv_container > button {
+    color: hsl(184, 100%, 22%);
+}
+
+.luxury_container > button {
+   color: hsl(179, 100%, 13%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+  /* ACTIVE STATES */
+button:hover {
+    cursor: pointer;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1280px) {
+    body {
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    body {
+        padding: 1rem;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .sedans_container {
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 1em;
+    }
+
+    .luxury_container {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 1em;
+    }
+
+    button {
+        margin-top: 3rem;
+    }
+
+    .attribution {
+        position: relative;
+    }
+}
